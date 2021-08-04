@@ -1,0 +1,6 @@
+leaflet::leaflet() %>% 
+  leaflet::addPolygons(data = ma_counties_raw)
+  
+leaflet::leaflet() %>% 
+  leaflet::addProviderTiles(providers$CartoDB.Voyager) %>% 
+  leaflet::addPolygons(data = ma_counties_raw)
