@@ -7,3 +7,4 @@ df <- hello2[ -c(3) ]
 plot.ts(df$CarrierDelay, main = "Late")
 lines(hello3$WeatherDelay, col = "orange", lwd = 2)
 axis(side = 4, at = pretty(hello3$WeatherDelay), col = "orange") 
+
