@@ -1,0 +1,11 @@
+df$WeekDay <- DelayedFlights$DayOfWeek
+df$WeekDay[df$WeekDay == 1] = 'Monday'
+[df$WeekDay == 2] = 'Tuesday'
+[df$WeekDay == 3] = 'Wednesday'
+[df$WeekDay == 4] = 'Thursday'
+[df$WeekDay == 5] = 'Friday'
+[df$WeekDay == 6] = 'Saturday'
+[df$WeekDay == 7] = 'Sunday'
+
+df %>% group_by(WeekDay) %>% 
+tally %>% arrange(desc(n))
